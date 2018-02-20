@@ -1,0 +1,29 @@
+<plugin
+		id="com.vp.plugin.sample.modeltransitor"
+		name="Create Model Transitor"
+		description="Create Model Transitor"
+		provider="Visual Paradigm"
+		class="com.vp.plugin.sample.modeltransitor.ModelTransitorPlugin">
+	
+	<actionSets>
+  		<actionSet id="com.vp.plugin.sample.modeltransitor.actionset1">
+			<toolbar
+					id="com.vp.plugin.sample.modeltransitor.actionset1.toolbar1"
+					orientation="north"
+					index="last"/>
+			
+			<action
+					id="com.vp.plugin.sample.modeltransitor.actionset1.ModelTransitorAction"
+					actionType="generalAction"
+      		name="Create Model Transitor"
+		      description="Create Model Transitor"
+					style="normal"
+          tooltip="Create Model Transitor"
+          icon="icon\TransitTo.png"
+					toolbarPath="com.vp.plugin.sample.modeltransitor.actionset1.toolbar1/#">
+				<actionController class="com.vp.plugin.sample.modeltransitor.actions.ModelTransitorActionControl"/>
+			</action>
+		</actionSet>
+
+	</actionSets>	
+</plugin>
